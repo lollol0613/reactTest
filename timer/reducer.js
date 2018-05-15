@@ -1,7 +1,7 @@
 //Import
 
 //Actions
-
+//Create variables
 const START_TIMER = 'START_TIMER';
 const RESTART_TIMER = 'RESTART_TIMER';
 const ADD_SECOND = 'ADD_SECOND';
@@ -25,7 +25,6 @@ function addSecond() {
 }
 
 //Reducer
-
 const TIMER_DURATION = 0;
 
 const initialState = {
@@ -33,7 +32,7 @@ const initialState = {
     elapsedTime: 0,
     timerDuration: TIMER_DURATION
 };
-
+//(state, action) => state 형태의 기본
 function reducer(state = initialState, action) {
     switch(action.type) {
         case START_TIMER:

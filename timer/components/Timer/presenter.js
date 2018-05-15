@@ -8,6 +8,7 @@ function formatTime(time) {
     time += minutes * 60
     var seconds = parseInt(time % 60, 10);
     return `${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
+    //javascript 
     return;
 }
 
